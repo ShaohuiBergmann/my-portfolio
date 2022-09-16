@@ -18,7 +18,7 @@
 
   --container-width-lg: 75%;
   --container-width-md:86%;
-  --container-width-ms:90%;
+  --container-width-sm:90%;
 
   --transition: all 400ms ease;
 }
@@ -92,6 +92,7 @@ a:hover {
   padding: 0.7rem 1.2rem;
   cursor: pointer;
   border: 1px solid var(--color-primary);
+  border-radius: 0.4rem;
   transition: var(--transition);
 }
 
@@ -110,4 +111,24 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+
+/*==========media quries (medium Devices) ======*/
+@media screen and (max-width: 1024px){
+  .container {
+    width: var(--container-width-md);
+  }
+  section {
+    margin-top: 6rem;
+  }
+}
+
+/*==========media quries (small Devices) ======*/
+@media screen and (max-width: 600px){
+  .container {
+    width: var(--container-width-sm);
+  }
+  section > h2{
+    margin-bottom: 2rem;
+  }
 }
